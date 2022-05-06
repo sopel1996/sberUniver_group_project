@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
 import { PostList } from "./components/PostList";
+import {Post} from './components/Post'
 
 import api from "./utils/api";
 
@@ -48,6 +49,7 @@ function App() {
             />
           }
         />
+        <Route path='posts/:postID' element={<Post />}/>
       </Routes>
     </div>
   );
