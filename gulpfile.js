@@ -7,9 +7,11 @@ return gulp.src("dist/*").pipe(
   gulpPutFile({
     dest: "/var/www/html",
     host: "212.6.44.82",
-    username: "test",
-    password: "123456",
+    username: "",
+    password: "",
     port: 22,
   })
 );
 });
+
+//add test_branch
